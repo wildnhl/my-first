@@ -7,47 +7,132 @@
       <link rel="stylesheet" href="./index.css" />
    </head>
    <body>
-      <main>
-         <section class="tabs">
+      <header class="preview">
+         <section id="header">
+            <a href="#"><img src="./imgs/logo.svg" alt="logo" /></a>
             <nav>
-               <div>
-                  <a href="#"> Tab 1 </a>
-               </div>
-               <div>
-                  <a href="#"> Tab 2 </a>
-               </div>
-               <div>
-                  <a href="#"> Tab 3 </a>
-               </div>
+               <ul>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Reviews</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
             </nav>
-            <article class="tabs__article">
-               <section>
-                  <h3>Tabs with soft transitioning effect.</h3>
-                  <h5>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Aenean euismod
-                     <br />
-                     bibendum laoreet. Proin gravida dolor sit amet lacus
-                     accumsan et viverra
-                     <br />
-                     justo commodo. Proin sodales pulvinar tempor. Cum sociis
-                     natoque penatibus et magnis dis parturient montes.
-                     <br />
-                     <br />
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Aenean euismod
-                     <br />
-                     bibendum laoreet.
-                  </h5>
-                  <button>Download</button>
-               </section>
-               <img src="./imgs/state.jpg" alt="state" />
-            </article>
+         </section>
+         <div class="preview_text-form-wrapper">
+            <div class="preview_text">
+               <img src="./imgs/big_logo.svg" alt="logo" />
+               <h1 class="general-header--color">
+                  MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+               </h1>
+               <div class="general-separator--color"></div>
+               <h5 class="general-subheader--color">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               </h5>
+               <button>Download</button>
+            </div>
+            <form action="#">
+               <div class="input-text-wrapper">
+                  <h4>Try Your <span>FREE</span> Trial Today</h4>
+                  <div class="input-container_item">
+                     <input type="text" name="name" />
+                     <label for="name">Name</label>
+                  </div>
+                  <div class="input-container_item">
+                     <input type="mail" name="mail" />
+                     <label for="mail">Email</label>
+                  </div>
+                  <div class="input-container_item">
+                     <input type="password" name="password" />
+                     <label for="password">Password</label>
+                  </div>
+               </div>
+               <button>Get Started</button>
+            </form>
+         </div>
+      </header>
+      <main>
+         <section class="social">
+            <div class="container">
+               <div class="social-wrapper">
+                  <div class="social_head">
+                     <h4>Social Media</h4>
+                     <h5>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean euismod bibendum laoreet.
+                     </h5>
+                  </div>
+                  <div class="social_links">
+                     <a href="#">
+                        <img src="./imgs/facebook_icon.svg" alt="facebook" />
+                     </a>
+                     <a href="#">
+                        <img src="./imgs/twitter_icon.svg" alt="twitter" />
+                     </a>
+                     <a href="#">
+                        <img src="./imgs/linkedin_icon.svg" alt="linkedin" />
+                     </a>
+                     <a href="#">
+                        <img src="./imgs/pinterest_icon.svg" alt="pinterest" />
+                     </a>
+                     <a href="#">
+                        <img src="./imgs/instagram_icon.svg" alt="instagram" />
+                     </a>
+                     <a href="#">
+                        <img src="./imgs/github_icon.svg" alt="github" />
+                     </a>
+                     <a href="#">
+                        <img src="./imgs/rss_icon.svg" alt="rss" />
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="tabs">
+            <div class="container">
+               <nav class="tabs__nav">
+                  <div>
+                     <a href="#">Tab 1</a>
+                  </div>
+                  <div>
+                     <a href="#">Tab 2</a>
+                  </div>
+                  <div>
+                     <a href="#">Tab 3</a>
+                  </div>
+               </nav>
+               <article class="tabs__article">
+                  <section>
+                     <h3>Tabs with soft transitioning effect.</h3>
+                     <h5>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean euismod
+                        <br />
+                        bibendum laoreet. Proin gravida dolor sit amet lacus
+                        accumsan et viverra
+                        <br />
+                        justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                        natoque penatibus et magnis dis parturient montes.
+                        <br />
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean euismod
+                        <br />
+                        bibendum laoreet.
+                     </h5>
+                     <button><a href="#">Download</a></button>
+                  </section>
+                  <div class="tabs__article__img">
+                     <img src="./imgs/state.jpg" alt="state" />
+                  </div>
+               </article>
+            </div>
          </section>
          <section class="about">
-            <h1 class="about_header" id="about_header">Why this is awesome</h1>
-            <div class="about_separator"></div>
-            <h5 class="about_subheader">
+            <h1 class="general-header">Why this is awesome</h1>
+            <div class="general-separator"></div>
+            <h5 class="general-subheader">
                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </h5>
             <div class="about_article-wrapper">
@@ -81,45 +166,111 @@
             </div>
          </section>
          <section class="pricing">
-            <h1 class="pricing_header" id="pricing_header">Pricing options</h1>
-            <div class="pricing_separator"></div>
-            <h5 class="pricing_subheader">
+            <h1 class="general-header">Pricing options</h1>
+            <div class="general-separator"></div>
+            <h5 class="general-subheader">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h5>
+            <div class="pricing_list">
+               <div class="pricing_list_item">
+                  <h3>Basic</h3>
+                  <h2>$10</h2>
+                  <p>Free for life</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+               </div>
+               <div class="pricing_list_item">
+                  <h3>Optima</h3>
+                  <h2>$20</h2>
+                  <p>Free for life</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+               </div>
+               <div class="pricing_list_item">
+                  <h3>Pro</h3>
+                  <h2>$30</h2>
+                  <p>Free for life</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+               </div>
+            </div>
+         </section>
+         <section class="reviews">
+            <h1 class="general-header">what our customers are saying</h1>
+            <div class="general-separator"></div>
+            <h5 class="general-subheader">
                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </h5>
             <section>
-               <section>
-                  <h4>Basic</h4>
-                  <h3>$10</h3>
-                  <h5>Free for life</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-               </section>
-               <section>
-                  <h4>Optima</h4>
-                  <h3>$20</h3>
-                  <h5>Free for life</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-               </section>
-               <section>
-                  <h4>Pro</h4>
-                  <h3>$30</h3>
-                  <h5>Free for life</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-                  <h5>1 gb of space</h5>
-               </section>
+               <article>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Doloribus accusamus expedita repellat similique odio
+                     aspernatur ex, architecto eaque quo suscipit.
+                  </p>
+                  <img
+                     class="arrowDown"
+                     src="./imgs/arrowDown.svg"
+                     alt="arrow"
+                  />
+                  <div class="reviews_article-head-wrapper">
+                     <img src="./imgs/avatar-1.svg" alt="avatar" />
+                     <div>
+                        <h4>Davis Rhiel Madsen</h4>
+                        <h5>Manager</h5>
+                     </div>
+                  </div>
+               </article>
+               <article>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Doloribus accusamus expedita repellat similique odio
+                     aspernatur ex, architecto eaque quo suscipit.
+                  </p>
+                  <img
+                     class="arrowDown"
+                     src="./imgs/arrowDown.svg"
+                     alt="arrow"
+                  />
+                  <div class="reviews_article-head-wrapper">
+                     <img src="./imgs/avatar-2.svg" alt="avatar" />
+                     <div>
+                        <h4>Jaydon Rosser</h4>
+                        <h5>Manager</h5>
+                     </div>
+                  </div>
+               </article>
+               <article>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Doloribus accusamus expedita repellat similique odio
+                     aspernatur ex, architecto eaque quo suscipit.
+                  </p>
+                  <img
+                     class="arrowDown"
+                     src="./imgs/arrowDown.svg"
+                     alt="arrow"
+                  />
+                  <div class="reviews_article-head-wrapper">
+                     <img src="./imgs/avatar-3.svg" alt="avatar" />
+                     <div>
+                        <h4>Cooper Dorwart</h4>
+                        <h5>Manager</h5>
+                     </div>
+                  </div>
+               </article>
             </section>
          </section>
       </main>
