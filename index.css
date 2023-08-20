@@ -273,6 +273,7 @@ form h4 span {
 
 .tabs {
    margin-top: 99px;
+   margin-bottom: 50px;
 }
 .tabs__article {
    display: flex;
@@ -347,7 +348,7 @@ form h4 span {
 /* About section */
 
 .about {
-   margin-bottom: 58px;
+   padding-bottom: 58px;
 }
 
 .about_article-wrapper {
@@ -384,7 +385,7 @@ form h4 span {
    max-width: 1508px;
    margin: 0 auto;
    background: #f5f5f5;
-   padding-bottom: 50px;
+   padding: 50px 0;
 }
 .pricing h5 {
    margin-bottom: 79px;
