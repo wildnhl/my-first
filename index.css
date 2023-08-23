@@ -31,10 +31,13 @@ h4 {
    font-size: 24px;
 }
 
-button {
+.button {
    font-family: 'Open sans', 'sans-serif';
    color: #fff;
-   text-decoration: none;
+   height: 58px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s;
 }
 .general-header {
    height: 150px;
@@ -56,29 +59,42 @@ button {
    color: #86878b;
 }
 
-#header {
+/* Preview section = header + banner */
+.preview {
+   z-index: 0;
+   position: relative;
+   margin: 0 auto;
+   max-width: 1510px;
+   background: url(./imgs/banner-background.jpg);
+   height: 1026px;
+}
+
+.header-container {
+   max-width: 1224px;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background: #000000;
-   padding: 0 170px 0 115px;
+   margin: 0 auto;
 }
-#header img {
+.header {
+   background: #000000;
+}
+.header__logo {
    display: block;
    width: 88px;
    height: 32px;
 }
-#header nav ul {
+.menu__list {
    display: flex;
 }
-#header nav ul li {
+.menu__list-item {
    text-align: center;
    width: 114px;
    height: 75px;
    line-height: 75px;
    transition: all 0.5s;
 }
-#header nav a {
+.menu__list-link {
    font-family: 'Open sans', sans-serif;
    color: #fff;
    text-decoration: none;
@@ -87,18 +103,9 @@ button {
    font-weight: 600;
 }
 
-#header nav li:hover {
+.menu__list-item:hover {
    background: #ec7979;
    cursor: pointer;
-}
-
-.preview {
-   z-index: 0;
-   position: relative;
-   margin: 0 auto;
-   max-width: 1510px;
-   background: url(./imgs/banner-background.jpg);
-   height: 1026px;
 }
 
 .preview::before {
@@ -111,14 +118,6 @@ button {
    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.preview_text {
-   max-width: 670px;
-}
-
-.preview_text img {
-   padding-top: 23px;
-   padding-bottom: 22px;
-}
 .general-header--color {
    margin-top: 48px;
    text-transform: uppercase;
@@ -142,58 +141,61 @@ button {
    color: #fff;
 }
 
-.preview_text-form-wrapper {
-   display: flex;
-   justify-content: space-between;
+.preview__banner {
    margin-top: 207px;
 }
-.preview_text button {
-   width: 270px;
-   height: 58px;
-   background-color: transparent;
-   color: #ffffff;
-   font-weight: 600;
-   border: 2px solid #fff;
-   cursor: pointer;
-   margin-top: 42px;
-   transition: all 0.3s;
+
+.banner {
+   display: flex;
+   justify-content: space-between;
 }
 
-.preview_text button:hover {
+.axit {
+   max-width: 670px;
+}
+
+.axit__logo {
+   padding-top: 23px;
+   padding-bottom: 22px;
+}
+
+.axit__button {
+   width: 270px;
+   background-color: transparent;
+   border: 2px solid #fff;
+   margin-top: 42px;
+}
+
+.axit__button:hover {
    color: #ec7979;
    border: 2px solid #ec7979;
 }
 
-.preview form {
+.form {
    height: fit-content;
    background: #fff;
    border-radius: 10px;
 }
 
-.input-text-wrapper {
+.form-wrapper {
    padding: 0px 50px;
 }
 
-.preview form button {
-   font-family: 'Open Sans', 'sans-serif';
+.form__button {
    font-size: 15px;
    width: 100%;
    display: block;
    background: #ec7979;
-   height: 60px;
    border: 0px;
-   color: #fff;
    margin-top: 75px;
    border-radius: 0 0 10px 10px;
-   cursor: pointer;
-   transition: all 0.3s;
 }
 
-.preview form button:hover {
+.form__button:hover {
    background: #ab4949;
 }
 
-form h4 {
+.form__header {
    line-height: 90px;
    text-transform: uppercase;
    color: #333;
@@ -201,16 +203,25 @@ form h4 {
    margin-bottom: 45px;
    text-align: center;
 }
-form h4 span {
+.form__header span {
    color: #ec7979;
    font-size: 24px;
 }
 
-.input-container_item + .input-container_item {
-   margin-top: 33px;
+.inputs-wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 33px;
 }
 
-.input-container_item input {
+.inputs {
+   display: flex;
+   flex-direction: column-reverse;
+   padding-bottom: 2px;
+   cursor: pointer;
+}
+
+.inputs__input {
    display: block;
    border: none;
    border-bottom: 1px solid #bdbdbd;
@@ -220,23 +231,19 @@ form h4 span {
    font-size: 14px;
    line-height: 16px;
 }
-.input-container_item {
-   display: flex;
-   flex-direction: column-reverse;
-   padding-bottom: 2px;
-}
 
-.input-container_item input:focus {
+.inputs__input:focus {
    border-bottom: 1px solid #ec7979;
 }
 
-.input-container_item label {
+.inputs__label {
    font-size: 14px;
    transition: all 0.3s;
    font-family: 'Open Sans', 'sans-serif';
    color: #bdbdbd;
+   cursor: text;
 }
-.input-container_item input:focus ~ label {
+.inputs__input:focus ~ .inputs__label {
    color: #ec7979;
 }
 
@@ -246,29 +253,29 @@ form h4 span {
    background: #f8efef;
 }
 
-.social-wrapper {
+.social__wrapper {
    display: flex;
    gap: 30px;
    align-items: center;
    padding: 13.5px 0 18px 0;
 }
 
-.social_head {
+.social__header {
    display: flex;
    gap: 31.5px;
    flex-direction: column;
 }
-.social_head h5 {
+.social__header h5 {
    font-weight: 400;
    color: #86878b;
 }
 
-.social_links {
+.social-links {
    display: flex;
    gap: 30px;
 }
 
-.social_links img {
+.social-link__img {
    display: block;
    height: 70px;
    width: 70px;
@@ -298,13 +305,8 @@ form h4 span {
 
 .tabs__article button {
    width: 270px;
-   height: 58px;
    background-color: #ec7979;
-   color: #ffffff;
-   font-weight: 600;
    border: none;
-   cursor: pointer;
-   transition: all 0.3s;
 }
 
 .tabs__article button a {
@@ -528,14 +530,9 @@ form h4 span {
 
 .stylish button {
    width: 370px;
-   height: 58px;
    background-color: transparent;
-   color: #ffffff;
-   font-weight: 600;
    border: 2px solid #fff;
-   cursor: pointer;
    margin-top: 73px;
-   transition: all 0.3s;
 }
 
 .stylish button:hover {
@@ -548,20 +545,12 @@ form h4 span {
    padding: 50px 0;
 }
 
-.contact form {
+.contact__form {
    margin-top: 88px;
-}
-
-.contact .input-text-wrapper {
-   padding: 0;
    display: flex;
-   justify-content: center;
    gap: 30px;
 }
 
-.contact_inputs .input-container_item + .input-container_item {
-   margin-top: 50px;
-}
 .input-container_item textarea {
    display: block;
    height: 193px;
@@ -575,11 +564,12 @@ form h4 span {
    resize: none;
 }
 
-.contact_inputs {
+.inputs-wrapper--flexg_gap {
    flex-grow: 1;
+   gap: 50px;
 }
 
-.contact_message {
+.message {
    display: flex;
    flex-direction: column-reverse;
    flex-grow: 1;
@@ -588,11 +578,11 @@ form h4 span {
    padding-bottom: 2px;
 }
 
-.contact_message label {
+.message__label {
    font-size: 14px;
 }
 
-.contact_message textarea {
+.message__area {
    display: block;
    border: none;
    border-bottom: 1px solid #bdbdbd;
@@ -605,34 +595,30 @@ form h4 span {
    flex-grow: 1;
 }
 
-.contact button {
+.contact__button {
    display: block;
    background: #ec7979;
    width: 370px;
-   height: 58px;
    border: 0px;
-   color: #fff;
    margin: 0 auto;
    margin-top: 50px;
-   cursor: pointer;
-   transition: all 0.3s;
 }
 
 .contact button:hover {
    background-color: #ab4949;
 }
 
-.contact_message textarea:focus {
+.message__area:focus {
    border-bottom: 1px solid #ec7979;
 }
 
-.contact_message textarea:focus ~ label {
+.message__area:focus ~ .message__label {
    color: #ec7979;
 }
 
 /* Footer */
 
-footer {
+.footer {
    background-color: #000;
    display: flex;
    flex-direction: column;
@@ -640,16 +626,14 @@ footer {
    padding: 35px 0 27px;
    gap: 27.8px;
 }
-footer .social_links {
+.social-links--gap {
    gap: 32.8px;
 }
-footer .social_links img,
-footer .social_links svg {
-   display: block;
+.social-link__img--size {
    width: 53.2px;
    height: 53.2px;
 }
-footer h5 {
+.footer__year {
    font-weight: 400;
    color: rgba(255, 255, 255, 0.5);
 }
