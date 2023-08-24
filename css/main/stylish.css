@@ -1,0 +1,38 @@
+.stylish {
+   background: url(/my-first/imgs/stylish-backgr.jpg);
+   height: 442px;
+}
+
+.stylish-wrapper {
+   display: flex;
+   height: inherit;
+   align-items: center;
+   justify-content: center;
+   background: rgba(0, 0, 0, 0.5);
+}
+
+.stylish__content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.general-header--col-fff,
+.general-subheader--col-fff {
+   color: #fff;
+}
+
+.border-col {
+   border-color: #fff;
+}
+
+.stylish__button {
+   width: 370px;
+   background-color: transparent;
+   border: 2px solid #fff;
+   margin-top: 73px;
+}
+
+.stylish__button:hover {
+   border: 2px solid #ec7979;
+   color: #ec7979;
+}

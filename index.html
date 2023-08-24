@@ -3,7 +3,8 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>AXIT</title>
+      <link type="image/x-icon" href="./imgs/favicon.png" rel="icon">
       <link rel="stylesheet" href="./index.css" />
    </head>
    <body>
@@ -42,11 +43,11 @@
                      src="./imgs/big_logo.svg"
                      alt="logo"
                   />
-                  <h1 class="general-header--color">
+                  <h1 class="axit__header">
                      MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
                   </h1>
-                  <div class="general-separator--color"></div>
-                  <h5 class="general-subheader--color">
+                  <div class="axit__separator"></div>
+                  <h5 class="axit__subheader">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </h5>
                   <button class="button axit__button">Download</button>
@@ -152,20 +153,20 @@
          <section class="tabs">
             <div class="container">
                <nav class="tabs__nav">
-                  <div>
-                     <a href="#">Tab 1</a>
+                  <div class="tabs__link-wrap">
+                     <a class="tabs__link" href="#">Tab 1</a>
                   </div>
-                  <div>
-                     <a href="#">Tab 2</a>
+                  <div class="tabs__link-wrap">
+                     <a class="tabs__link tabs__link--padding" href="#">Tab 2</a>
                   </div>
-                  <div>
-                     <a href="#">Tab 3</a>
+                  <div class="tabs__link-wrap">
+                     <a class="tabs__link tabs__link--padding" href="#">Tab 3</a>
                   </div>
                </nav>
-               <article class="tabs__article">
-                  <section>
-                     <h3>Tabs with soft transitioning effect.</h3>
-                     <h5>
+               <article class="tabs-article">
+                  <section class="tabs-article__section">
+                     <h3 class="tabs-article__head">Tabs with soft transitioning effect.</h3>
+                     <h5 class="tabs-article__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Aenean euismod
                         <br />
@@ -181,9 +182,11 @@
                         <br />
                         bibendum laoreet.
                      </h5>
-                     <button class="button"><a href="#">Download</a></button>
+                     <button class="button tabs-article__button">
+                        <a class="button-link" href="#">Download</a>
+                     </button>
                   </section>
-                  <div class="tabs__article__img">
+                  <div class="tabs-article__img-wrapper">
                      <img src="./imgs/state.jpg" alt="state" />
                   </div>
                </article>
@@ -196,35 +199,35 @@
                <h5 class="general-subheader">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                </h5>
-               <div class="about_article-wrapper">
-                  <article class="about_article">
-                     <img src="./imgs/about_icon_1.svg" alt="Keyboard" />
-                     <h4 class="about_article_header">Thoughtful Design</h4>
-                     <p class="about_article_paragraph">
+               <section class="article-wrapper about__article-wrapper">
+                  <article class="article-wrapper__item">
+                     <img class="article-wrapper__icon" src="./imgs/about_icon_1.svg" alt="Keyboard" />
+                     <h4 class="article-wrapper__header">Thoughtful Design</h4>
+                     <p class="article-wrapper__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing<br />
                         elit. Aenean euismod bibendum laoreet. Proin gravida
                         dolor sit amet lacus accumsan et viverra.
                      </p>
                   </article>
-                  <article class="about_article">
-                     <img src="./imgs/about_icon_2.svg" alt="Lightning" />
-                     <h4 class="about_article_header">Thoughtful Design</h4>
-                     <p class="about_article_paragraph">
+                  <article class="article-wrapper__item">
+                     <img class="article-wrapper__icon" src="./imgs/about_icon_2.svg" alt="Lightning" />
+                     <h4 class="article-wrapper__header">Thoughtful Design</h4>
+                     <p class="article-wrapper__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing<br />
                         elit. Aenean euismod bibendum laoreet. Proin gravida
                         dolor sit amet lacus accumsan et viverra.
                      </p>
                   </article>
-                  <article class="about_article">
-                     <img src="./imgs/about_icon_3.svg" alt="Lightning" />
-                     <h4 class="about_article_header">Thoughtful Design</h4>
-                     <p class="about_article_paragraph">
+                  <article class="article-wrapper__item">
+                     <img class="article-wrapper__icon" src="./imgs/about_icon_3.svg" alt="Lightning" />
+                     <h4 class="article-wrapper__header">Thoughtful Design</h4>
+                     <p class="article-wrapper__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing<br />
                         elit. Aenean euismod bibendum laoreet. Proin gravida
                         dolor sit amet lacus accumsan et viverra.
                      </p>
                   </article>
-               </div>
+               </section>
             </div>
          </section>
          <section class="pricing">
@@ -234,10 +237,10 @@
                <h5 class="general-subheader">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                </h5>
-               <div class="pricing_list">
-                  <div class="pricing_list_item">
-                     <h3>Basic</h3>
-                     <h2>$10</h2>
+               <div class="price-list pricing__price-list">
+                  <div class="price-list__item">
+                     <h3 class="price-list__head">Basic</h3>
+                     <h2  class="price-list__cost">$10</h2>
                      <h5>Free for life</h5>
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
@@ -246,9 +249,9 @@
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
                   </div>
-                  <div class="pricing_list_item">
-                     <h3>Optima</h3>
-                     <h2>$20</h2>
+                  <div class="price-list__item">
+                     <h3 class="price-list__head">Optima</h3>
+                     <h2 class="price-list__cost">$20</h2>
                      <h5>Free for life</h5>
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
@@ -257,9 +260,9 @@
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
                   </div>
-                  <div class="pricing_list_item">
-                     <h3>Pro</h3>
-                     <h2>$30</h2>
+                  <div class="price-list__item">
+                     <h3 class="price-list__head">Pro</h3>
+                     <h2  class="price-list__cost">$30</h2>
                      <h5>Free for life</h5>
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
@@ -278,49 +281,49 @@
                <h5 class="general-subheader">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                </h5>
-               <section>
+               <section class="customers-section reviews__customers-section">
                   <article>
-                     <p>
+                     <p class="customers-section__bio">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Doloribus accusamus expedita repellat similique
                         odio aspernatur ex, architecto eaque quo suscipit.
                      </p>
-                     <span class="arrowDown"></span>
-                     <div class="reviews_article_customer">
-                        <img src="./imgs/avatar-1.svg" alt="avatar" />
+                     <span class="arrow-down"></span>
+                     <div class="customers-section__customer">
+                        <img class="customers-section__photo" src="./imgs/avatar-1.svg" alt="avatar" />
                         <div>
-                           <h4>Davis Rhiel Madsen</h4>
-                           <h5>Manager</h5>
+                           <h4 class="customers-section__name">Davis Rhiel Madsen</h4>
+                           <h5 class="customers-section__job">Manager</h5>
                         </div>
                      </div>
                   </article>
                   <article>
-                     <p>
+                     <p class="customers-section__bio">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Doloribus accusamus expedita repellat similique
                         odio aspernatur ex, architecto eaque quo suscipit.
                      </p>
-                     <span class="arrowDown"></span>
-                     <div class="reviews_article_customer">
-                        <img src="./imgs/avatar-2.svg" alt="avatar" />
+                     <span class="arrow-down"></span>
+                     <div class="customers-section__customer">
+                        <img class="customers-section__photo" src="./imgs/avatar-2.svg" alt="avatar" />
                         <div>
-                           <h4>Jaydon Rosser</h4>
-                           <h5>Manager</h5>
+                           <h4 class="customers-section__name">Jaydon Rosser</h4>
+                           <h5 class="customers-section__job">Manager</h5>
                         </div>
                      </div>
                   </article>
                   <article>
-                     <p>
+                     <p class="customers-section__bio">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Doloribus accusamus expedita repellat similique
                         odio aspernatur ex, architecto eaque quo suscipit.
                      </p>
-                     <span class="arrowDown"></span>
-                     <div class="reviews_article_customer">
-                        <img src="./imgs/avatar-3.svg" alt="avatar" />
+                     <span class="arrow-down"></span>
+                     <div class="customers-section__customer">
+                        <img class="customers-section__photo" src="./imgs/avatar-3.svg" alt="avatar" />
                         <div>
-                           <h4>Cooper Dorwart</h4>
-                           <h5>Manager</h5>
+                           <h4 class="customers-section__name">Cooper Dorwart</h4>
+                           <h5 class="customers-section__job">Manager</h5>
                         </div>
                      </div>
                   </article>
@@ -329,16 +332,16 @@
          </section>
          <section class="stylish">
             <div class="stylish-wrapper">
-               <div class="stylish_content">
-                  <h1 class="general-header txt-col-fff">
+               <div class="stylish__content">
+                  <h1 class="general-header general-header--col-fff">
                      STYLISH AXURE DESIGN
                   </h1>
                   <div class="general-separator border-col"></div>
-                  <h5 class="general-subheader txt-col-fff">
+                  <h5 class="general-subheader general-subheader--col-fff">
                      Use the sections you need, remove the ones you don't.
                      Create gorgeous prototypes faster than ever!
                   </h5>
-                  <button class="button">Download</button>
+                  <button class="button stylish__button">Download</button>
                </div>
             </div>
          </section>
