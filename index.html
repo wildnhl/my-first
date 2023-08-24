@@ -3,53 +3,88 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>AXIT</title>
+      <link type="image/x-icon" href="./imgs/favicon.png" rel="icon">
       <link rel="stylesheet" href="./index.css" />
    </head>
    <body>
       <header class="preview">
-         <section id="header">
-            <a href="#"><img src="./imgs/logo.svg" alt="logo" /></a>
-            <nav>
-               <ul>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Reviews</a></li>
-                  <li><a href="#">Contact</a></li>
-               </ul>
-            </nav>
+         <section class="header">
+            <div class="header-container">
+               <a href="#">
+                  <img class="header__logo" src="./imgs/logo.svg" alt="logo" />
+               </a>
+               <nav class="menu">
+                  <ul class="menu__list">
+                     <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Features</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">About</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Pricing</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Reviews</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Contact</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
          </section>
          <div class="container">
-            <section class="preview_text-form-wrapper">
-               <div class="preview_text">
-                  <img src="./imgs/big_logo.svg" alt="logo" />
-                  <h1 class="general-header--color">
+            <section class="banner preview__banner">
+               <section class="axit">
+                  <img
+                     class="axit__logo"
+                     src="./imgs/big_logo.svg"
+                     alt="logo"
+                  />
+                  <h1 class="axit__header">
                      MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
                   </h1>
-                  <div class="general-separator--color"></div>
-                  <h5 class="general-subheader--color">
+                  <div class="axit__separator"></div>
+                  <h5 class="axit__subheader">
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </h5>
-                  <button>Download</button>
-               </div>
-               <form action="#">
-                  <div class="input-text-wrapper">
-                     <h4>Try Your <span>FREE</span> Trial Today</h4>
-                     <div class="input-container_item">
-                        <input type="text" name="name" />
-                        <label for="name">Name</label>
-                     </div>
-                     <div class="input-container_item">
-                        <input type="mail" name="mail" />
-                        <label for="mail">Email</label>
-                     </div>
-                     <div class="input-container_item">
-                        <input type="password" name="password" />
-                        <label for="password">Password</label>
+                  <button class="button axit__button">Download</button>
+               </section>
+               <form class="form" action="#">
+                  <div class="form-wrapper">
+                     <h4 class="form__header">
+                        Try Your <span>FREE</span> Trial Today
+                     </h4>
+                     <div class="inputs-wrapper">
+                        <div class="inputs">
+                           <input
+                              class="inputs__input"
+                              type="text"
+                              name="name"
+                           />
+                           <label class="inputs__label" for="name">Name</label>
+                        </div>
+                        <div class="inputs">
+                           <input
+                              class="inputs__input"
+                              type="mail"
+                              name="mail"
+                           />
+                           <label class="inputs__label" for="mail">Email</label>
+                        </div>
+                        <div class="inputs">
+                           <input
+                              class="inputs__input"
+                              type="password"
+                              name="pass"
+                           />
+                           <label class="inputs__label" for="pass">Password</label>
+                        </div>
                      </div>
                   </div>
-                  <button>Get Started</button>
+                  <button class="button form__button">Get Started</button>
                </form>
             </section>
          </div>
@@ -57,45 +92,56 @@
       <main>
          <section class="social">
             <div class="container">
-               <div class="social-wrapper">
-                  <div class="social_head">
+               <div class="social__wrapper">
+                  <div class="social__header">
                      <h4>Social Media</h4>
                      <h5>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Aenean euismod bibendum laoreet.
                      </h5>
                   </div>
-                  <div class="social_links">
+                  <div class="social-links">
                      <a href="#">
-                        <img src="./imgs/facebook_icon.svg" alt="facebook" />
+                        <img
+                           class="social-link__img"
+                           src="./imgs/facebook_icon.svg"
+                           alt="facebook"
+                        />
                      </a>
                      <a href="#">
-                        <img src="./imgs/twitter_icon.svg" alt="twitter" />
+                        <img
+                           class="social-link__img"
+                           src="./imgs/twitter_icon.svg"
+                           alt="twitter"
+                        />
                      </a>
                      <a href="#">
-                        <img src="./imgs/linkedin_icon.svg" alt="linkedin" />
+                        <img
+                           class="social-link__img"
+                           src="./imgs/linkedin_icon.svg"
+                           alt="linkedin"
+                        />
                      </a>
                      <a href="#">
-                        <img src="./imgs/pinterest_icon.svg" alt="pinterest" />
+                        <img
+                           class="social-link__img"
+                           src="./imgs/pinterest_icon.svg"
+                           alt="pinterest"
+                        />
                      </a>
                      <a href="#">
-                        <img src="./imgs/instagram_icon.svg" alt="instagram" />
+                        <img
+                           class="social-link__img"
+                           src="./imgs/instagram_icon.svg"
+                           alt="instagram"
+                        />
                      </a>
                      <a href="#">
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           width="70"
-                           height="70"
-                           viewBox="0 0 70 70"
-                           fill="none"
-                        >
-                           <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M35.0754 5.83337C19.0075 5.83337 5.98454 18.8563 5.98454 34.9242C5.98454 47.775 14.3175 58.6805 25.8791 62.5305C27.3345 62.793 27.8595 61.8975 27.8595 61.1275C27.8595 60.4363 27.8362 58.6046 27.8275 56.1809C19.7337 57.9367 18.0245 52.2784 18.0245 52.2784C16.7062 48.9184 14.7958 48.023 14.7958 48.023C12.1562 46.2175 14.997 46.2584 14.997 46.2584C17.9195 46.4625 19.4508 49.2567 19.4508 49.2567C22.0466 53.7017 26.2641 52.4184 27.915 51.6746C28.1804 49.7934 28.9387 48.51 29.767 47.7838C23.3095 47.0517 16.5195 44.555 16.5195 33.4046C16.5195 30.2342 17.6541 27.6325 19.5062 25.6025C19.2116 24.8646 18.2054 21.9042 19.795 17.9025C19.795 17.9025 22.2362 17.118 27.7925 20.8805C30.1654 20.2349 32.6132 19.9054 35.0725 19.9005C37.5317 19.9044 39.9797 20.234 42.3525 20.8805C47.9116 17.115 50.35 17.9025 50.35 17.9025C51.9395 21.9042 50.942 24.8646 50.6387 25.6025C52.5054 27.6325 53.6254 30.2313 53.6254 33.4046C53.6254 44.5842 46.8295 47.04 40.3487 47.7605C41.3841 48.6588 42.3175 50.4321 42.3175 53.1446C42.3175 57.0355 42.2825 60.1738 42.2825 61.1275C42.2825 61.9063 42.8016 62.8105 44.2862 62.5246C55.842 58.6688 64.1662 47.7721 64.1662 34.9242C64.1662 18.8563 51.1433 5.83337 35.0754 5.83337Z"
-                              fill="#CCCCCC"
-                           />
-                        </svg>
+                        <img
+                           class="social-link__img"
+                           src="./imgs/github_icon.svg"
+                           alt="github"
+                        />
                      </a>
                      <a href="#">
                         <img src="./imgs/rss_icon.svg" alt="rss" />
@@ -107,20 +153,20 @@
          <section class="tabs">
             <div class="container">
                <nav class="tabs__nav">
-                  <div>
-                     <a href="#">Tab 1</a>
+                  <div class="tabs__link-wrap">
+                     <a class="tabs__link" href="#">Tab 1</a>
                   </div>
-                  <div>
-                     <a href="#">Tab 2</a>
+                  <div class="tabs__link-wrap">
+                     <a class="tabs__link tabs__link--padding" href="#">Tab 2</a>
                   </div>
-                  <div>
-                     <a href="#">Tab 3</a>
+                  <div class="tabs__link-wrap">
+                     <a class="tabs__link tabs__link--padding" href="#">Tab 3</a>
                   </div>
                </nav>
-               <article class="tabs__article">
-                  <section>
-                     <h3>Tabs with soft transitioning effect.</h3>
-                     <h5>
+               <article class="tabs-article">
+                  <section class="tabs-article__section">
+                     <h3 class="tabs-article__head">Tabs with soft transitioning effect.</h3>
+                     <h5 class="tabs-article__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Aenean euismod
                         <br />
@@ -136,9 +182,11 @@
                         <br />
                         bibendum laoreet.
                      </h5>
-                     <button><a href="#">Download</a></button>
+                     <button class="button tabs-article__button">
+                        <a class="button-link" href="#">Download</a>
+                     </button>
                   </section>
-                  <div class="tabs__article__img">
+                  <div class="tabs-article__img-wrapper">
                      <img src="./imgs/state.jpg" alt="state" />
                   </div>
                </article>
@@ -151,35 +199,35 @@
                <h5 class="general-subheader">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                </h5>
-               <div class="about_article-wrapper">
-                  <article class="about_article">
-                     <img src="./imgs/about_icon_1.svg" alt="Keyboard" />
-                     <h4 class="about_article_header">Thoughtful Design</h4>
-                     <p class="about_article_paragraph">
+               <section class="article-wrapper about__article-wrapper">
+                  <article class="article-wrapper__item">
+                     <img class="article-wrapper__icon" src="./imgs/about_icon_1.svg" alt="Keyboard" />
+                     <h4 class="article-wrapper__header">Thoughtful Design</h4>
+                     <p class="article-wrapper__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing<br />
                         elit. Aenean euismod bibendum laoreet. Proin gravida
                         dolor sit amet lacus accumsan et viverra.
                      </p>
                   </article>
-                  <article class="about_article">
-                     <img src="./imgs/about_icon_2.svg" alt="Lightning" />
-                     <h4 class="about_article_header">Thoughtful Design</h4>
-                     <p class="about_article_paragraph">
+                  <article class="article-wrapper__item">
+                     <img class="article-wrapper__icon" src="./imgs/about_icon_2.svg" alt="Lightning" />
+                     <h4 class="article-wrapper__header">Thoughtful Design</h4>
+                     <p class="article-wrapper__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing<br />
                         elit. Aenean euismod bibendum laoreet. Proin gravida
                         dolor sit amet lacus accumsan et viverra.
                      </p>
                   </article>
-                  <article class="about_article">
-                     <img src="./imgs/about_icon_3.svg" alt="Lightning" />
-                     <h4 class="about_article_header">Thoughtful Design</h4>
-                     <p class="about_article_paragraph">
+                  <article class="article-wrapper__item">
+                     <img class="article-wrapper__icon" src="./imgs/about_icon_3.svg" alt="Lightning" />
+                     <h4 class="article-wrapper__header">Thoughtful Design</h4>
+                     <p class="article-wrapper__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing<br />
                         elit. Aenean euismod bibendum laoreet. Proin gravida
                         dolor sit amet lacus accumsan et viverra.
                      </p>
                   </article>
-               </div>
+               </section>
             </div>
          </section>
          <section class="pricing">
@@ -189,10 +237,10 @@
                <h5 class="general-subheader">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                </h5>
-               <div class="pricing_list">
-                  <div class="pricing_list_item">
-                     <h3>Basic</h3>
-                     <h2>$10</h2>
+               <div class="price-list pricing__price-list">
+                  <div class="price-list__item">
+                     <h3 class="price-list__head">Basic</h3>
+                     <h2  class="price-list__cost">$10</h2>
                      <h5>Free for life</h5>
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
@@ -201,9 +249,9 @@
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
                   </div>
-                  <div class="pricing_list_item">
-                     <h3>Optima</h3>
-                     <h2>$20</h2>
+                  <div class="price-list__item">
+                     <h3 class="price-list__head">Optima</h3>
+                     <h2 class="price-list__cost">$20</h2>
                      <h5>Free for life</h5>
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
@@ -212,9 +260,9 @@
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
                   </div>
-                  <div class="pricing_list_item">
-                     <h3>Pro</h3>
-                     <h2>$30</h2>
+                  <div class="price-list__item">
+                     <h3 class="price-list__head">Pro</h3>
+                     <h2  class="price-list__cost">$30</h2>
                      <h5>Free for life</h5>
                      <h5>1 gb of space</h5>
                      <h5>1 gb of space</h5>
@@ -233,49 +281,49 @@
                <h5 class="general-subheader">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                </h5>
-               <section>
+               <section class="customers-section reviews__customers-section">
                   <article>
-                     <p>
+                     <p class="customers-section__bio">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Doloribus accusamus expedita repellat similique
                         odio aspernatur ex, architecto eaque quo suscipit.
                      </p>
-                     <span class="arrowDown"></span>
-                     <div class="reviews_article_customer">
-                        <img src="./imgs/avatar-1.svg" alt="avatar" />
+                     <span class="arrow-down"></span>
+                     <div class="customers-section__customer">
+                        <img class="customers-section__photo" src="./imgs/avatar-1.svg" alt="avatar" />
                         <div>
-                           <h4>Davis Rhiel Madsen</h4>
-                           <h5>Manager</h5>
+                           <h4 class="customers-section__name">Davis Rhiel Madsen</h4>
+                           <h5 class="customers-section__job">Manager</h5>
                         </div>
                      </div>
                   </article>
                   <article>
-                     <p>
+                     <p class="customers-section__bio">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Doloribus accusamus expedita repellat similique
                         odio aspernatur ex, architecto eaque quo suscipit.
                      </p>
-                     <span class="arrowDown"></span>
-                     <div class="reviews_article_customer">
-                        <img src="./imgs/avatar-2.svg" alt="avatar" />
+                     <span class="arrow-down"></span>
+                     <div class="customers-section__customer">
+                        <img class="customers-section__photo" src="./imgs/avatar-2.svg" alt="avatar" />
                         <div>
-                           <h4>Jaydon Rosser</h4>
-                           <h5>Manager</h5>
+                           <h4 class="customers-section__name">Jaydon Rosser</h4>
+                           <h5 class="customers-section__job">Manager</h5>
                         </div>
                      </div>
                   </article>
                   <article>
-                     <p>
+                     <p class="customers-section__bio">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Doloribus accusamus expedita repellat similique
                         odio aspernatur ex, architecto eaque quo suscipit.
                      </p>
-                     <span class="arrowDown"></span>
-                     <div class="reviews_article_customer">
-                        <img src="./imgs/avatar-3.svg" alt="avatar" />
+                     <span class="arrow-down"></span>
+                     <div class="customers-section__customer">
+                        <img class="customers-section__photo" src="./imgs/avatar-3.svg" alt="avatar" />
                         <div>
-                           <h4>Cooper Dorwart</h4>
-                           <h5>Manager</h5>
+                           <h4 class="customers-section__name">Cooper Dorwart</h4>
+                           <h5 class="customers-section__job">Manager</h5>
                         </div>
                      </div>
                   </article>
@@ -284,16 +332,16 @@
          </section>
          <section class="stylish">
             <div class="stylish-wrapper">
-               <div class="stylish_content">
-                  <h1 class="general-header txt-col-fff">
+               <div class="stylish__content">
+                  <h1 class="general-header general-header--col-fff">
                      STYLISH AXURE DESIGN
                   </h1>
                   <div class="general-separator border-col"></div>
-                  <h5 class="general-subheader txt-col-fff">
+                  <h5 class="general-subheader general-subheader--col-fff">
                      Use the sections you need, remove the ones you don't.
                      Create gorgeous prototypes faster than ever!
                   </h5>
-                  <button>Download</button>
+                  <button class="button stylish__button">Download</button>
                </div>
             </div>
          </section>
@@ -304,74 +352,101 @@
                <h5 class="general-subheader">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                </h5>
-               <form action="#">
-                  <div class="input-text-wrapper">
-                     <div class="contact_inputs">
-                        <div class="input-container_item">
-                           <input type="text" name="name" />
-                           <label for="name">Name</label>
+               <form class="contact__form" action="#">
+                     <div class="inputs-wrapper inputs-wrapper--flexg_gap">
+                        <div class="inputs">
+                           <input
+                              class="inputs__input"
+                              type="text"
+                              name="name"
+                           />
+                           <label class="inputs__label" for="name">Name</label>
                         </div>
-                        <div class="input-container_item">
-                           <input type="mail" name="mail" />
-                           <label for="mail">Email</label>
+                        <div class="inputs">
+                           <input
+                              class="inputs__input"
+                              type="mail"
+                              name="mail"
+                           />
+                           <label class="inputs__label" for="mail">Email</label>
                         </div>
-                        <div class="input-container_item">
-                           <input type="password" name="password" />
-                           <label for="password">Password</label>
+                        <div class="inputs">
+                           <input
+                              class="inputs__input"
+                              type="password"
+                              name="pass"
+                           />
+                           <label class="inputs__label" for="pass">Password</label>
                         </div>
                      </div>
-                     <div class="contact_message">
+                     <div class="message">
                         <textarea
+                        class="message__area"
                            title="message"
                            type="text"
                            name="message"
                         ></textarea>
-                        <label for="message">Message</label>
+                        <label class="message__label" for="message">Message</label>
                      </div>
                   </div>
-                  <button>Send message</button>
+                  <button class="button contact__button">Send message</button>
                </form>
             </div>
          </section>
       </main>
-      <footer>
-         <div class="social_links">
+      <footer class="footer">
+         <div class="social-links social-links--gap">
             <a href="#">
-               <img src="./imgs/facebook_icon.svg" alt="facebook" />
+               <img
+                  class="social-link__img social-link__img--size"
+                  src="./imgs/facebook_icon.svg"
+                  alt="facebook"
+               />
             </a>
             <a href="#">
-               <img src="./imgs/twitter_icon.svg" alt="twitter" />
+               <img
+                  class="social-link__img social-link__img--size"
+                  src="./imgs/twitter_icon.svg"
+                  alt="twitter"
+               />
             </a>
             <a href="#">
-               <img src="./imgs/linkedin_icon.svg" alt="linkedin" />
+               <img
+                  class="social-link__img social-link__img--size"
+                  src="./imgs/linkedin_icon.svg"
+                  alt="linkedin"
+               />
             </a>
             <a href="#">
-               <img src="./imgs/pinterest_icon.svg" alt="pinterest" />
+               <img
+                  class="social-link__img social-link__img--size"
+                  src="./imgs/pinterest_icon.svg"
+                  alt="pinterest"
+               />
             </a>
             <a href="#">
-               <img src="./imgs/instagram_icon.svg" alt="instagram" />
+               <img
+                  class="social-link__img social-link__img--size"
+                  src="./imgs/instagram_icon.svg"
+                  alt="instagram"
+               />
             </a>
             <a href="#">
-               <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="70"
-                  height="70"
-                  viewBox="0 0 70 70"
-                  fill="none"
-               >
-                  <path
-                     fill-rule="evenodd"
-                     clip-rule="evenodd"
-                     d="M35.0754 5.83337C19.0075 5.83337 5.98454 18.8563 5.98454 34.9242C5.98454 47.775 14.3175 58.6805 25.8791 62.5305C27.3345 62.793 27.8595 61.8975 27.8595 61.1275C27.8595 60.4363 27.8362 58.6046 27.8275 56.1809C19.7337 57.9367 18.0245 52.2784 18.0245 52.2784C16.7062 48.9184 14.7958 48.023 14.7958 48.023C12.1562 46.2175 14.997 46.2584 14.997 46.2584C17.9195 46.4625 19.4508 49.2567 19.4508 49.2567C22.0466 53.7017 26.2641 52.4184 27.915 51.6746C28.1804 49.7934 28.9387 48.51 29.767 47.7838C23.3095 47.0517 16.5195 44.555 16.5195 33.4046C16.5195 30.2342 17.6541 27.6325 19.5062 25.6025C19.2116 24.8646 18.2054 21.9042 19.795 17.9025C19.795 17.9025 22.2362 17.118 27.7925 20.8805C30.1654 20.2349 32.6132 19.9054 35.0725 19.9005C37.5317 19.9044 39.9797 20.234 42.3525 20.8805C47.9116 17.115 50.35 17.9025 50.35 17.9025C51.9395 21.9042 50.942 24.8646 50.6387 25.6025C52.5054 27.6325 53.6254 30.2313 53.6254 33.4046C53.6254 44.5842 46.8295 47.04 40.3487 47.7605C41.3841 48.6588 42.3175 50.4321 42.3175 53.1446C42.3175 57.0355 42.2825 60.1738 42.2825 61.1275C42.2825 61.9063 42.8016 62.8105 44.2862 62.5246C55.842 58.6688 64.1662 47.7721 64.1662 34.9242C64.1662 18.8563 51.1433 5.83337 35.0754 5.83337Z"
-                     fill="#CCCCCC"
-                  />
-               </svg>
+               <img
+                  class="social-link__img social-link__img--size"
+                  src="./imgs/github_icon.svg"
+                  alt="github"
+               />
             </a>
             <a href="#">
-               <img src="./imgs/rss_icon.svg" alt="rss" />
+               <img
+                  class="social-link__img social-link__img--size"
+                  src="./imgs/rss_icon.svg"
+                  alt="rss"
+               />
             </a>
          </div>
-         <h5>© 2015 Axure Themes</h5>
+         <h5 class="footer__year">© 2015 Axure Themes</h5>
       </footer>
    </body>
 </html>

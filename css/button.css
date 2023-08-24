@@ -1,0 +1,13 @@
+.button {
+   font-family: 'Open sans', 'sans-serif';
+   color: #fff;
+   height: 58px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+.button-link {
+   color: #fff;
+   text-decoration: none;
+}

@@ -1,0 +1,35 @@
+.about {
+   padding-bottom: 58px;
+}
+
+.about__article-wrapper {
+   margin: 0 auto;
+   margin-top: 71px;
+}
+
+.article-wrapper {
+   display: flex;
+   gap: 30px;
+}
+
+.article-wrapper__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 370px;
+   padding: 0 16px;
+}
+
+.article-wrapper__icon {
+   width: 170px;
+   height: 170px;
+}
+
+.article-wrapper__header {
+   margin: 33px 0 42px;
+   font-size: 24px;
+   text-transform: capitalize;
+}
+.article-wrapper__description {
+   text-align: center;
+}

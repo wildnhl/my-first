@@ -1,0 +1,48 @@
+.reviews {
+   padding: 50px 0 64px;
+}
+.reviews__customers-section {
+   margin-top: 83px;
+}
+.customers-section {
+   display: flex;
+   gap: 30px;
+}
+
+.customers-section__bio {
+   color: #86878b;
+   background: #e2e2e2;
+   border-radius: 10px;
+   text-align: center;
+   padding: 38px 23px;
+}
+
+.customers-section__name {
+   text-transform: capitalize;
+   margin: 10px 0 26px;
+}
+
+.customers-section__job {
+   font-weight: 400;
+}
+
+.customers-section__customer {
+   display: flex;
+   gap: 30px;
+   margin-top: 46px;
+}
+
+.customers-section__photo {
+   height: 70px;
+   width: 70px;
+}
+
+.arrow-down {
+   display: block;
+   width: 0;
+   height: 0;
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   border-top: 20px solid #e2e2e2;
+   margin-left: 70px;
+}
