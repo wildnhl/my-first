@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap');
 
 @import url(./css/default+reset.css);
+@import url(./css/mediaDefault.css);
 @import url(./css/button.css);
 @import url(./css/general-header.css);
-@import url(./css/header/header.css);
-@import url(./css/main/social.css);
-@import url(./css/main/tabs.css);
-@import url(./css/main/about.css);
-@import url(./css/main/pricing.css);
-@import url(./css/main/reviews.css);
-@import url(./css/main/stylish.css);
-@import url(./css/main/contact.css);
-@import url(./css/footer/footer.css);
+@import url(./css/header.css);
+@import url(./css/social.css);
+@import url(./css/tabs.css);
+@import url(./css/about.css);
+@import url(./css/pricing.css);
+@import url(./css/reviews.css);
+@import url(./css/stylish.css);
+@import url(./css/contact.css);
+@import url(./css/footer.css);

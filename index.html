@@ -8,39 +8,26 @@
       <link rel="stylesheet" href="./index.css" />
    </head>
    <body>
-      <header class="preview">
-         <section class="header">
-            <div class="header-container">
+      <header>
+         <section class="header-top">
+            <div class="header-top__content">
                <a href="#">
-                  <img class="header__logo" src="./imgs/logo.svg" alt="logo" />
+                  <img class="header-top__logo" src="./imgs/header/logo.svg" alt="logo" />
                </a>
                <nav class="menu">
-                  <ul class="menu__list">
-                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Features</a>
-                     </li>
-                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">About</a>
-                     </li>
-                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Pricing</a>
-                     </li>
-                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Reviews</a>
-                     </li>
-                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Contact</a>
-                     </li>
-                  </ul>
+                  <button>Features</button>
+                  <button>About</button>
+                  <button>Pricing</button>
+                  <button>Reviews</button>
+                  <button>Contact</button>
                </nav>
             </div>
          </section>
-         <div class="container">
-            <section class="banner preview__banner">
+         <section class="header-bottom container">
                <section class="axit">
                   <img
                      class="axit__logo"
-                     src="./imgs/big_logo.svg"
+                     src="./imgs/header/big_logo.svg"
                      alt="logo"
                   />
                   <h1 class="axit__header">
@@ -86,11 +73,9 @@
                   </div>
                   <button class="button form__button">Get Started</button>
                </form>
-            </section>
-         </div>
+         </section>
       </header>
-      <main>
-         <section class="social">
+      <main class="social">
             <div class="container">
                <div class="social__wrapper">
                   <div class="social__header">
@@ -104,53 +89,53 @@
                      <a href="#">
                         <img
                            class="social-link__img"
-                           src="./imgs/facebook_icon.svg"
+                           src="./imgs/social/facebook_icon.svg"
                            alt="facebook"
                         />
                      </a>
                      <a href="#">
                         <img
                            class="social-link__img"
-                           src="./imgs/twitter_icon.svg"
+                           src="./imgs/social/twitter_icon.svg"
                            alt="twitter"
                         />
                      </a>
                      <a href="#">
                         <img
                            class="social-link__img"
-                           src="./imgs/linkedin_icon.svg"
+                           src="./imgs/social/linkedin_icon.svg"
                            alt="linkedin"
                         />
                      </a>
                      <a href="#">
                         <img
                            class="social-link__img"
-                           src="./imgs/pinterest_icon.svg"
+                           src="./imgs/social/pinterest_icon.svg"
                            alt="pinterest"
                         />
                      </a>
                      <a href="#">
                         <img
                            class="social-link__img"
-                           src="./imgs/instagram_icon.svg"
+                           src="./imgs/social/instagram_icon.svg"
                            alt="instagram"
                         />
                      </a>
                      <a href="#">
                         <img
                            class="social-link__img"
-                           src="./imgs/github_icon.svg"
+                           src="./imgs/social/github_icon.svg"
                            alt="github"
                         />
                      </a>
                      <a href="#">
-                        <img src="./imgs/rss_icon.svg" alt="rss" />
+                        <img src="./imgs/social/rss_icon.svg" alt="rss" />
                      </a>
                   </div>
                </div>
             </div>
-         </section>
-         <section class="tabs">
+      </main>
+      <main class="tabs">
             <div class="container">
                <nav class="tabs__nav">
                   <div class="tabs__link-wrap">
@@ -187,12 +172,12 @@
                      </button>
                   </section>
                   <div class="tabs-article__img-wrapper">
-                     <img src="./imgs/state.jpg" alt="state" />
+                     <img src="./imgs/tabs/state.jpg" alt="state" />
                   </div>
                </article>
             </div>
-         </section>
-         <section class="about">
+      </main>
+      <main class="about">
             <div class="container">
                <h1 class="general-header">Why this is awesome</h1>
                <div class="general-separator"></div>
@@ -201,7 +186,7 @@
                </h5>
                <section class="article-wrapper about__article-wrapper">
                   <article class="article-wrapper__item">
-                     <img class="article-wrapper__icon" src="./imgs/about_icon_1.svg" alt="Keyboard" />
+                     <img class="article-wrapper__icon" src="./imgs/about/about_icon_1.svg" alt="Keyboard" />
                      <h4 class="article-wrapper__header">Thoughtful Design</h4>
                      <p class="article-wrapper__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing<br />
@@ -210,7 +195,7 @@
                      </p>
                   </article>
                   <article class="article-wrapper__item">
-                     <img class="article-wrapper__icon" src="./imgs/about_icon_2.svg" alt="Lightning" />
+                     <img class="article-wrapper__icon" src="./imgs/about/about_icon_2.svg" alt="Lightning" />
                      <h4 class="article-wrapper__header">Thoughtful Design</h4>
                      <p class="article-wrapper__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing<br />
@@ -219,7 +204,7 @@
                      </p>
                   </article>
                   <article class="article-wrapper__item">
-                     <img class="article-wrapper__icon" src="./imgs/about_icon_3.svg" alt="Lightning" />
+                     <img class="article-wrapper__icon" src="./imgs/about/about_icon_3.svg" alt="Lightning" />
                      <h4 class="article-wrapper__header">Thoughtful Design</h4>
                      <p class="article-wrapper__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing<br />
@@ -229,8 +214,8 @@
                   </article>
                </section>
             </div>
-         </section>
-         <section class="pricing">
+      </main>
+      <main class="pricing">
             <div class="container">
                <h1 class="general-header">Pricing options</h1>
                <div class="general-separator"></div>
@@ -273,8 +258,8 @@
                   </div>
                </div>
             </div>
-         </section>
-         <section class="reviews">
+      </main>
+      <main class="reviews">
             <div class="container">
                <h1 class="general-header">what our customers are saying</h1>
                <div class="general-separator"></div>
@@ -290,7 +275,7 @@
                      </p>
                      <span class="arrow-down"></span>
                      <div class="customers-section__customer">
-                        <img class="customers-section__photo" src="./imgs/avatar-1.svg" alt="avatar" />
+                        <img class="customers-section__photo" src="./imgs/reviews/avatar-1.svg" alt="avatar" />
                         <div>
                            <h4 class="customers-section__name">Davis Rhiel Madsen</h4>
                            <h5 class="customers-section__job">Manager</h5>
@@ -305,7 +290,7 @@
                      </p>
                      <span class="arrow-down"></span>
                      <div class="customers-section__customer">
-                        <img class="customers-section__photo" src="./imgs/avatar-2.svg" alt="avatar" />
+                        <img class="customers-section__photo" src="./imgs/reviews/avatar-2.svg" alt="avatar" />
                         <div>
                            <h4 class="customers-section__name">Jaydon Rosser</h4>
                            <h5 class="customers-section__job">Manager</h5>
@@ -320,7 +305,7 @@
                      </p>
                      <span class="arrow-down"></span>
                      <div class="customers-section__customer">
-                        <img class="customers-section__photo" src="./imgs/avatar-3.svg" alt="avatar" />
+                        <img class="customers-section__photo" src="./imgs/reviews/avatar-3.svg" alt="avatar" />
                         <div>
                            <h4 class="customers-section__name">Cooper Dorwart</h4>
                            <h5 class="customers-section__job">Manager</h5>
@@ -329,23 +314,19 @@
                   </article>
                </section>
             </div>
-         </section>
-         <section class="stylish">
-            <div class="stylish-wrapper">
-               <div class="stylish__content">
-                  <h1 class="general-header general-header--col-fff">
-                     STYLISH AXURE DESIGN
-                  </h1>
-                  <div class="general-separator border-col"></div>
-                  <h5 class="general-subheader general-subheader--col-fff">
-                     Use the sections you need, remove the ones you don't.
-                     Create gorgeous prototypes faster than ever!
-                  </h5>
-                  <button class="button stylish__button">Download</button>
-               </div>
-            </div>
-         </section>
-         <section class="contact">
+      </main>
+      <main class="stylish">
+         <h1 class="general-header general-header--col-fff">
+            STYLISH AXURE DESIGN
+         </h1>
+         <div class="general-separator border-col"></div>
+         <h5 class="general-subheader general-subheader--col-fff">
+            Use the sections you need, remove the ones you don't.
+            Create gorgeous prototypes faster than ever!
+         </h5>
+         <button class="button stylish__button">Download</button>
+      </main>
+      <main class="contact">
             <div class="container">
                <h1 class="general-header">contact us</h1>
                <div class="general-separator"></div>
@@ -394,54 +375,54 @@
             </div>
          </section>
       </main>
-      <footer class="footer">
+      <footer>
          <div class="social-links social-links--gap">
             <a href="#">
                <img
                   class="social-link__img social-link__img--size"
-                  src="./imgs/facebook_icon.svg"
+                  src="./imgs/social/facebook_icon.svg"
                   alt="facebook"
                />
             </a>
             <a href="#">
                <img
                   class="social-link__img social-link__img--size"
-                  src="./imgs/twitter_icon.svg"
+                  src="./imgs/social/twitter_icon.svg"
                   alt="twitter"
                />
             </a>
             <a href="#">
                <img
                   class="social-link__img social-link__img--size"
-                  src="./imgs/linkedin_icon.svg"
+                  src="./imgs/social/linkedin_icon.svg"
                   alt="linkedin"
                />
             </a>
             <a href="#">
                <img
                   class="social-link__img social-link__img--size"
-                  src="./imgs/pinterest_icon.svg"
+                  src="./imgs/social/pinterest_icon.svg"
                   alt="pinterest"
                />
             </a>
             <a href="#">
                <img
                   class="social-link__img social-link__img--size"
-                  src="./imgs/instagram_icon.svg"
+                  src="./imgs/social/instagram_icon.svg"
                   alt="instagram"
                />
             </a>
             <a href="#">
                <img
                   class="social-link__img social-link__img--size"
-                  src="./imgs/github_icon.svg"
+                  src="./imgs/social/github_icon.svg"
                   alt="github"
                />
             </a>
             <a href="#">
                <img
                   class="social-link__img social-link__img--size"
-                  src="./imgs/rss_icon.svg"
+                  src="./imgs/social/rss_icon.svg"
                   alt="rss"
                />
             </a>

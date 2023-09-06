@@ -29,3 +29,19 @@
    height: 70px;
    width: 70px;
 }
+
+@media screen and (max-width: 1025px) {
+   .social-link__img {
+      height: 64px;
+      width: 64px;
+   }
+
+   .social__header {
+      font-size: 18px;
+      gap: 23px;
+   }
+
+   .social__header h5 {
+      font-size: 14px;
+   }
+}
