@@ -31,6 +31,9 @@
 }
 
 @media screen and (max-width: 1025px) {
+   .social__wrapper {
+      gap: 20px;
+   }
    .social-link__img {
       height: 64px;
       width: 64px;

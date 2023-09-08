@@ -26,10 +26,31 @@
 }
 
 .article-wrapper__header {
-   margin: 33px 0 42px;
-   font-size: 24px;
+   margin: 34px 0 41px;
    text-transform: capitalize;
 }
+
 .article-wrapper__description {
    text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+   .article-wrapper {
+      gap: 20px;
+   }
+   .article-wrapper__item {
+      padding: 0;
+   }
+   .article-wrapper__icon {
+      width: 147px;
+      height: 147px;
+   }
+   .article-wrapper__header {
+      margin: 29px 0 45px;
+      font-size: 18px;
+      text-transform: capitalize;
+   }
+   .article-wrapper__description {
+      font-size: 14px;
+   }
 }

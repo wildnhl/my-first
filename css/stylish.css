@@ -29,3 +29,9 @@
    border: 2px solid #ec7979;
    color: #ec7979;
 }
+
+@media screen and (max-width: 1025px) {
+   .stylish__button {
+      width: 318px;
+   }
+}

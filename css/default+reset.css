@@ -5,7 +5,8 @@
    font-size: 18px;
 }
 .container {
-   max-width: 1170px;
+   max-width: 1202px;
+   padding: 0 16px;
    margin: 0 auto;
 }
 .none {
@@ -24,4 +25,3 @@ h4 {
 h4 {
    font-size: 24px;
 }
-

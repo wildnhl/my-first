@@ -1,5 +1,4 @@
 .general-header {
-   height: 150px;
    text-align: center;
    line-height: 150px;
    text-transform: uppercase;
@@ -16,4 +15,19 @@
    text-align: center;
    font-weight: 400;
    color: #86878b;
+}
+
+@media screen and (max-width: 1025px) {
+   .general-header {
+      line-height: 120px;
+      font-size: 24px;
+   }
+
+   .general-separator {
+      width: 143px;
+   }
+
+   .general-subheader {
+      font-size: 14px;
+   }
 }
