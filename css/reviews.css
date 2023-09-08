@@ -6,15 +6,18 @@
 }
 .customers-section {
    display: flex;
-   gap: 30px;
+   gap: 2.25%;
 }
 
 .customers-section__bio {
+   display: flex;
+   align-items: center;
+   height: 180px;
    color: #86878b;
    background: #e2e2e2;
    border-radius: 10px;
    text-align: center;
-   padding: 38px 23px;
+   padding: 0 24px;
 }
 
 .customers-section__name {
@@ -45,4 +48,27 @@
    border-right: 15px solid transparent;
    border-top: 20px solid #e2e2e2;
    margin-left: 70px;
+}
+
+@media screen and (max-width: 1025px) {
+   .customers-section__bio {
+      font-size: 14px;
+      padding: 0 33px;
+   }
+
+   .customers-section__customer {
+      gap: 22px;
+   }
+
+   .customers-section__name {
+      font-size: 18px;
+      margin: 6px 0 15px;
+   }
+   .customers-section__job {
+      font-size: 14px;
+   }
+   .customers-section__photo {
+      height: 63px;
+      width: 63px;
+   }
 }

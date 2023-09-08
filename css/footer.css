@@ -1,4 +1,4 @@
-.footer {
+.footer-body {
    background-color: #000;
    display: flex;
    flex-direction: column;
@@ -6,14 +6,29 @@
    padding: 35px 0 27px;
    gap: 27.8px;
 }
-.social-links--gap {
-   gap: 32.8px;
+
+.social-links--footer {
+   width: 100%;
+   gap: 2.7%;
+   justify-content: center;
 }
+
 .social-link__img--size {
    width: 53.2px;
    height: 53.2px;
 }
+
 .footer__year {
    font-weight: 400;
    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 1025px) {
+   .social-link__img--size {
+      width: 45px;
+      height: 45px;
+   }
+   .footer__year {
+      font-size: 14px;
+   }
 }
