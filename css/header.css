@@ -3,9 +3,8 @@ header {
    position: relative;
    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../imgs/header/banner-background.jpg);
-   background-size: 100% 1026px;
+   background-size: 100% 100%;
    background-repeat: no-repeat;
-   height: 1026px;
 }
 
 .header-top {
@@ -15,7 +14,7 @@ header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 0px calc(50% - 585px);
+   max-width: 1220px;
 }
 .header-top__logo {
    display: block;
@@ -23,6 +22,10 @@ header {
    height: 32px;
 }
 
+.header-top__logo-wrapper {
+   margin-right: auto;
+   margin-left: 115px;
+}
 .menu {
    display: flex;
 }
@@ -44,10 +47,15 @@ header {
    cursor: pointer;
 }
 
+.burger-icon {
+   display: none;
+}
+
 .header-bottom {
    display: flex;
-   gap: 30px;
    margin-top: 207px;
+   padding-bottom: 185px;
+   justify-content: space-between;
 }
 
 .axit {
@@ -96,7 +104,6 @@ header {
    height: fit-content;
    background: #fff;
    border-radius: 10px;
-   width: 40.17%;
 }
 
 .form-wrapper {
@@ -167,9 +174,9 @@ header {
    color: #ec7979;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1370px) {
    .header-bottom {
-      margin: 207px 20px 0;
+      gap: 36px;
    }
 }
 
@@ -182,23 +189,18 @@ header {
 
 @media screen and (max-width: 1025px) {
    header {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-         url(../imgs/header/background-header-1024px.jpg);
-      background-size: 100% 768px;
-      height: 768px;
+      background-size: cover;
+      background-position: center;
    }
-   .header-top__content {
-      padding: 0 20px 0 115px;
-   }
-
    .header-bottom {
-      margin: 0 20px 0 115px;
       margin-top: 137px;
-      gap: 36px;
+      gap: 0;
+      padding-bottom: 106px;
+      margin-left: 105px;
    }
 
    .axit {
-      max-width: 454px;
+      width: 454px;
    }
    .axit__logo {
       width: 115px;
@@ -234,5 +236,86 @@ header {
    .form__header,
    .form__header span {
       font-size: 18px;
+   }
+}
+
+@media screen and (max-width: 910px) {
+   .header-bottom {
+      margin-top: 61px;
+   }
+   .form-wrapper {
+      padding: 0 24px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .form__header,
+   .form__header span {
+      font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 585px) {
+   .header-bottom {
+      margin-top: 84px;
+      flex-direction: column;
+      align-items: center;
+      gap: 56px;
+      padding-bottom: 50px;
+   }
+
+   .axit {
+      text-align: center;
+      max-width: 100%;
+   }
+
+   .axit__logo {
+      display: none;
+   }
+   .axit__header {
+      margin: 0;
+   }
+   .axit__separator {
+      width: 134;
+      margin: 42px auto;
+   }
+
+   .axit__subheader {
+      margin: 0 auto;
+   }
+
+   .axit__button {
+      width: 100%;
+   }
+   .form__header {
+      margin: 0;
+   }
+   .form__button {
+      margin-top: 51px;
+   }
+}
+@media screen and (max-width: 800px) {
+   .header-bottom {
+      margin-left: 0;
+   }
+   .header-top__logo-wrapper {
+      margin-left: 16px;
+   }
+}
+
+@media screen and (max-width: 769px) {
+   .menu > * {
+      display: none;
+   }
+
+   .burger-icon {
+      display: block;
+      height: 76px;
+   }
+}
+
+@media screen and (max-width: 430px) {
+   .form {
+      width: 100%;
    }
 }
