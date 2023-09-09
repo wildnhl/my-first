@@ -48,3 +48,28 @@
       font-size: 14px;
    }
 }
+@media screen and (max-width: 1025px) {
+   .social-links {
+      gap: 20px;
+   }
+}
+@media screen and (max-width: 910px) {
+   .social__wrapper {
+      flex-direction: column;
+      text-align: center;
+   }
+   .social-links {
+      gap: 17px;
+   }
+
+   .social-link__img {
+      height: 40px;
+      width: 40px;
+   }
+}
+@media screen and (max-width: 504px) {
+   .social-link__img {
+      height: 26px;
+      width: 26px;
+   }
+}
