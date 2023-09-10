@@ -141,7 +141,7 @@ header {
 .inputs-wrapper {
    display: flex;
    flex-direction: column;
-   gap: 33px;
+   gap: 17px;
 }
 
 .inputs {
@@ -159,11 +159,16 @@ header {
    transition: all 0.3s;
    font-family: 'Open Sans', 'sans-serif';
    font-size: 14px;
-   line-height: 16px;
+   padding: 16px 0;
 }
 
 .inputs__input:focus {
    border-bottom: 1px solid #ec7979;
+}
+
+.inputs__input:focus::placeholder {
+   color: #ec7979;
+   transition: all 0.3s;
 }
 
 .inputs__label {
@@ -171,9 +176,6 @@ header {
    transition: all 0.3s;
    font-family: 'Open Sans', 'sans-serif';
    color: #bdbdbd;
-}
-.inputs__input:focus ~ .inputs__label {
-   color: #ec7979;
 }
 
 @media screen and (max-width: 1370px) {
