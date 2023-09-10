@@ -1,7 +1,8 @@
 .stylish {
    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../imgs/stylish/stylish-backgr.jpg);
-   background-size: 100% 442px;
+   background-size: cover;
+   background-position: center;
    background-repeat: no-repeat;
    display: flex;
    align-items: center;
@@ -33,5 +34,15 @@
 @media screen and (max-width: 1025px) {
    .stylish__button {
       width: 318px;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .stylish {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+         url(../imgs/stylish/stylish-backgr-mobile.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
    }
 }

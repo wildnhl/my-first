@@ -37,6 +37,7 @@
 @media screen and (max-width: 1025px) {
    .article-wrapper {
       gap: 20px;
+      margin-top: 32px;
    }
    .article-wrapper__item {
       padding: 0;
@@ -46,11 +47,23 @@
       height: 147px;
    }
    .article-wrapper__header {
-      margin: 29px 0 45px;
+      margin: 29px 0 37px;
       font-size: 18px;
       text-transform: capitalize;
    }
    .article-wrapper__description {
       font-size: 14px;
+      padding: 0 12px;
+   }
+}
+
+@media screen and (max-width: 570px) {
+   .article-wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+   }
+   .article-wrapper__item {
+      width: 100%;
    }
 }

@@ -1,0 +1,18 @@
+{
+   "dependencies": {
+      "@parcel/transformer-sass": "^2.9.3",
+      "parcel": "^2.9.3",
+      "sass": "^1.66.1"
+   },
+   "name": "my-first",
+   "description": "",
+   "version": "1.0.0",
+   "main": "index.js",
+   "devDependencies": {},
+   "scripts": {
+      "watch": "parcel index.html -p 3000 --open"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC"
+}

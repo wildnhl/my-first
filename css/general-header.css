@@ -31,3 +31,14 @@
       font-size: 14px;
    }
 }
+@media screen and (max-width: 570px) {
+   .general-header {
+      font-size: 18px;
+   }
+   .general-separator {
+      width: 134px;
+   }
+   .general-subheader {
+      font-size: 13px;
+   }
+}

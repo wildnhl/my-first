@@ -68,6 +68,13 @@
 
 @media screen and (max-width: 1025px) {
    .price-list__item:hover {
-      margin-top: -17px;
+      transform: scale(1.02);
+   }
+}
+
+@media screen and (max-width: 570px) {
+   .price-list {
+      flex-direction: column;
+      gap: 27px;
    }
 }

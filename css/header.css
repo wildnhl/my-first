@@ -15,6 +15,8 @@ header {
    align-items: center;
    justify-content: space-between;
    max-width: 1220px;
+   margin-left: 115px;
+   padding-left: 16px;
 }
 .header-top__logo {
    display: block;
@@ -23,8 +25,8 @@ header {
 }
 
 .header-top__logo-wrapper {
-   margin-right: auto;
-   margin-left: 115px;
+   /* margin-right: auto;
+   margin-left: 115px; */
 }
 .menu {
    display: flex;
@@ -192,6 +194,10 @@ header {
       background-size: cover;
       background-position: center;
    }
+
+   .header-top__content {
+      max-width: 889px;
+   }
    .header-bottom {
       margin-top: 137px;
       gap: 0;
@@ -252,6 +258,10 @@ header {
    .form__header,
    .form__header span {
       font-size: 14px;
+   }
+
+   .header-top__content {
+      margin-left: auto;
    }
 }
 
