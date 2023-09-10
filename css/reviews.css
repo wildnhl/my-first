@@ -72,3 +72,9 @@
       width: 63px;
    }
 }
+
+@media screen and (max-width: 510px) {
+   .customers-section {
+      flex-direction: column;
+   }
+}

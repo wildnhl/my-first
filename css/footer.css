@@ -1,5 +1,8 @@
-.footer-body {
+footer {
    background-color: #000;
+}
+
+.footer-body {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -30,5 +33,11 @@
    }
    .footer__year {
       font-size: 14px;
+   }
+}
+@media screen and (max-width: 400px) {
+   .social-link__img--size {
+      width: 26px;
+      height: 26px;
    }
 }
